@@ -1,0 +1,70 @@
+{
+    "1": {
+        "client": "Omuonga",
+        "location": "Juwaka",
+        "invoice": "inv123",
+        "driver": "a0090",
+        "status": "Assigned",
+        "time": "2025-08-09T23:50:32.568888",
+        "invoice_number": "N/A",
+        "client_name": "N/A",
+        "driver_code": "N/A",
+        "created_at": null
+    },
+    "2": {
+        "client": "Omuonga",
+        "location": "Juwaka",
+        "invoice": "inv123",
+        "driver": "a0090",
+        "status": "Assigned",
+        "time": "2025-08-09T23:55:21.905007",
+        "invoice_number": "N/A",
+        "client_name": "N/A",
+        "driver_code": "N/A",
+        "created_at": null
+    },
+    "delivery_3": {
+        "invoice_number": "INV0098",
+        "client_name": "Mungeu",
+        "location": "Syokimau",
+        "driver_code": "Dr-001",
+        "status": "Pending",
+        "created_at": "2025-08-10T00:42:41.263835"
+    },
+    "delivery_4": {
+        "invoice_number": "INV0789",
+        "client_name": "Hinga ent",
+        "location": "Kamulu",
+        "driver_code": "a0090",
+        "status": "Rejected",
+        "created_at": "2025-08-10T00:56:06.784408",
+        "rejection_mode": false,
+        "rejection_reason": "Duplicated"
+    },
+    "delivery_5": {
+        "invoice_number": "INV0789",
+        "client_name": "Hinga ent",
+        "location": "Kamulu",
+        "driver_code": "a0090",
+        "status": "Rejected",
+        "created_at": "2025-08-10T00:59:43.676489",
+        "rejection_mode": false,
+        "rejection_reason": "Duplicated"
+    },
+    "delivery_6": {
+        "invoice_number": "INV0098",
+        "client_name": "Hinga ent",
+        "location": "Kamulu",
+        "driver_code": "Dr-001",
+        "status": "Assigned",
+        "created_at": "2025-08-10T01:05:14.015411"
+    },
+    "7": {
+        "client": "STVF ENT",
+        "location": "kilolo",
+        "invoice": "inv200",
+        "driver": "jm0056",
+        "status": "Assigned",
+        "time": "2025-08-10T01:21:53.589257"
+    }
+}

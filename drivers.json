@@ -1,0 +1,25 @@
+{
+    "Dr-001": {
+        "name": "Hansen",
+        "phone": "0789786756",
+        "fcm_token": "",
+        "code": "N/A"
+    },
+    "a0090": {
+        "name": "Aziel Otieno",
+        "phone": "0789787867",
+        "fcm_token": "TOKEN-a0090-03b6d061",
+        "code": "N/A"
+    },
+    "dr-001": {
+        "name": "Dumani",
+        "code": "dr-001",
+        "phone": "0778786798"
+    },
+    "jm0056": {
+        "name": "Joseph Munga",
+        "code": "JM0056",
+        "phone": "787890090",
+        "fcm_token": ""
+    }
+}

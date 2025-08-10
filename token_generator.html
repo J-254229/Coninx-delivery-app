@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-messaging-compat.js"></script>
+    <script>
+      // Firebase config (from your credentials)
+      const firebaseConfig = {
+        apiKey: "AIzaSyD9n7CZO3JjW0wH4Pll_qNw6j66xtN5kic",
+        authDomain: "delivery-app-7022d.firebaseapp.com",
+        projectId: "delivery-app-7022d",
+        storageBucket: "delivery-app-7022d.firebasestorage.app",
+        messagingSenderId: "325246493759",
+        appId: "1:325246493759:web:0dcfee1a6d68e550dec48a",
+        measurementId: "G-GC1S6CZHL1"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      const messaging = firebase.messaging();
+
+      async function requestPermissionAndToken() {
+        try {
+          await Notification.requestPermission();
+          const currentToken = await messaging.getToken({
+            vapidKey: "BH-FxQ8zAutjO0Rtcw1cdPerA-zb9JzJG5hlP252goY4nChoF7lWT5Pu2wSkSTKaNb5TVAjq88455XCAvK8Si_0"
+          });
+          if (currentToken) {
+            // Send token and driver name to Python via Streamlit
+            const urlParams = new URLSearchParams(window.location.search);
+            const driverName = urlParams.get("driver");
+            const msg = { driver: driverName, token: currentToken };
+            window.parent.postMessage(JSON.stringify(msg), "*");
+          } else {
+            console.warn("No registration token available.");
+          }
+        } catch (err) {
+          console.error("Error getting token", err);
+        }
+      }
+
+      window.onload = requestPermissionAndToken;
+    </script>
+  </head>
+  <body>
+    <h4>🔐 Generating FCM Token...</h4>
+  </body>
+</html>

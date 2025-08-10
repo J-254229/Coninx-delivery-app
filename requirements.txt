@@ -1,0 +1,4 @@
+streamlit
+firebase-admin
+requests
+streamlit-autorefresh
